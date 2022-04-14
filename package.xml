@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>ghost_teleop_controller</name>
+  <name>mobile_rack_teleop_controller</name>
   <version>0.0.0</version>
-  <description>The ghost_teleop_controller package</description>
+  <description>The mobile_rack_teleop_controller package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
