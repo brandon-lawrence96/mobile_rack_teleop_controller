@@ -1,0 +1,9 @@
+<launch>
+    <!-- <remap from="/cmd_vel" to="/mcu/command/manual_twist"/> -->
+    <include file="$(find teleop_twist_joy)/launch/teleop.launch">
+	    <arg name="config_filepath" value="$(find mobile_rack_teleop_controller)/config/xbox.config.yaml"/>
+    </include>
+    
+    <node pkg="mobile_rack_teleop_controller" type="gamepad_converter_mobile_rack.py" name="gamepad_converter_node" output="screen">
+    </node>
+</launch>
