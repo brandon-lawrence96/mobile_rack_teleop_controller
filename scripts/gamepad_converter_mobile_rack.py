@@ -89,6 +89,12 @@ def main():
 
     while not rospy.is_shutdown():
         if  base_vel != None:
+            wheel_vel_vec = wheelVel()
+            wheel_1_vel = wheel_vel_vec[0,0]
+            wheel_2_vel = wheel_vel_vec[1,0]
+            wheel_3_vel = wheel_vel_vec[2,0]
+            wheel_4_vel = wheel_vel_vec[3,0]
+            
             [INSERT CODE TO APPLY WHEEL VELOCITIES TO ODRIVE MOTORS]
 
         rate = rospy.Rate(10)  # 10hz
